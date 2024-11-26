@@ -1,0 +1,115 @@
+/* TOPO */
+
+body {
+
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header a {
+
+    text-decoration: none;
+
+}
+header {
+
+    margin: 2vw 0 2vw 0;
+}
+header nav.topo div {
+
+    margin: 1vw 0 0 0;
+    font-weight: 700;
+}
+
+nav.topo a {
+
+    color: #1090CB;
+
+}
+nav.topo ul li a {
+
+    color: black;
+}
+nav.topo {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 2vw;
+}
+nav.topo ul {
+
+    display: flex;
+}
+nav.topo li {
+
+    margin: 0 2vw 0 0;
+    padding: 7px 15px 10px 15px;
+}
+nav.topo li span a {
+
+    color: #1090CB;
+}
+nav.topo button {
+
+    border: #1090CB;
+    background-color: #1090CB;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+section#mobile {
+
+    background-color: #d9e8ee;
+    display: flex;
+    padding: 5vw 5vw 5vw 5vw;
+}
+
+section#mobile span {
+
+    color: #1090CB;
+}
+
+section#mobile h1 {
+
+    font-weight: 800;
+    margin: 0 0 2vw 0;
+    font-size: 3vw;
+}
+section#mobile p {
+
+    margin: 0 0 2vw 0;
+    font-size: 1vw;
+}
+
+div.experienced .botao {
+
+    display: flex;
+}
+
+section#mobile button.primeiro {
+
+    background-color: #1090CB;
+    border: none;
+    padding: 13px 45px 16px 45px;
+    margin: 0 2vw 0 0;
+    border-radius: 15px;
+}
+section#mobile button.segundo {
+    border: solid #1090CB;
+    padding: 13px 45px 13px 45px;
+    border-radius: 15px;
+}
+
+section#web .icons {
+    margin: 3vw 5vw 0 0;
+    display: flex;
+}
+section#web {
+
+    display: flex;
+    justify-content: center;
+}
+section#web .icons img {
+
+   
+}
