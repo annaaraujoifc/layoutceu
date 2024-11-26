@@ -109,7 +109,56 @@ section#web {
     display: flex;
     justify-content: center;
 }
+section#web .icons h4 {
+
+    margin: 0 0 3px 0;
+    font-weight: 600;
+}
 section#web .icons img {
 
-   
+    margin: 0 1vw 0 0;
+}
+
+section#lorem {
+
+    justify-content: center;
+    text-align: center;
+    margin: 10vw 0 0 0;
+}
+section#lorem h2 {
+
+    margin: 0 0 2vw 0;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+section#lorem p {
+
+    font-size: 1vw;
+    margin: 0 0 8vw 0;
+}
+
+div.conteudo1 {
+
+    display: flex;
+}
+.conteudo1 h3 {
+
+    margin: 8vw 0 0 0;
+    font-size: 2vw;
+    text-align: justify;
+    font-weight: 800;
+}
+.conteudo1 h3 span {
+
+    color: #1090CB;
+}
+.conteudo1 p {
+
+    text-align: justify;
+}
+
+div.conteudo2 {
+
+    display: flex;
 }
