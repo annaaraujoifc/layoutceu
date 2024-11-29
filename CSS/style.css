@@ -1,164 +1,227 @@
-/* TOPO */
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body {
-
-    color: black;
+body, html {
+    width: 100%;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
-header a {
 
-    text-decoration: none;
-
-}
+/* Cabeçalho */
 header {
-
-    margin: 2vw 0 2vw 0;
-}
-header nav.topo div {
-
-    margin: 1vw 0 0 0;
-    font-weight: 700;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    
 }
 
-nav.topo a {
-
-    color: #1090CB;
-
-}
-nav.topo ul li a {
-
-    color: black;
-}
-nav.topo {
-
+header nav.topo {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 0 2vw;
+    align-items: center;
+   
+    margin: 2vw auto; 
+    padding: 0 20px;
 }
+
 nav.topo ul {
-
     display: flex;
+    list-style: none;
+    align-items: first baseline;
+    gap: 20px;
 }
+
 nav.topo li {
-
-    margin: 0 2vw 0 0;
-    padding: 7px 15px 10px 15px;
+    margin: 0 15px;
 }
-nav.topo li span a {
 
+nav.topo li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+nav.topo div a {
+
+    text-decoration: none;
     color: #1090CB;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
-nav.topo button {
 
-    border: #1090CB;
+
+nav.topo button {
     background-color: #1090CB;
     color: white;
-    padding: 10px 15px 10px 15px;
+    border: none;
     border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
+
+/* Seção Principal (Homem com Computador) */
 section#mobile {
-
-    background-color: #d9e8ee;
     display: flex;
-    padding: 5vw 5vw 5vw 5vw;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh; 
+    padding: 0 5%;
+    background-color: #d9ecf7; 
 }
 
-section#mobile span {
-
-    color: #1090CB;
+section#mobile .texto {
+    max-width: 50%;
 }
 
 section#mobile h1 {
-
-    font-weight: 800;
-    margin: 0 0 2vw 0;
-    font-size: 3vw;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    margin: 0 0 0 1.5vw;
 }
+
+section#mobile h1 span {
+    color: #1090CB;
+}
+
 section#mobile p {
-
-    margin: 0 0 2vw 0;
-    font-size: 1vw;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    margin: 2vw 0 3vw 1.5vw;
 }
 
-div.experienced .botao {
-
+section#mobile .botoes {
     display: flex;
+    gap: 15px;
+}
+
+section#mobile .botao {
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+
 }
 
 section#mobile button.primeiro {
-
     background-color: #1090CB;
+    color: white;
     border: none;
-    padding: 13px 45px 16px 45px;
-    margin: 0 2vw 0 0;
-    border-radius: 15px;
+    padding: 15px 45px;
+    border-radius: 10px;
 }
+
 section#mobile button.segundo {
-    border: solid #1090CB;
-    padding: 13px 45px 13px 45px;
-    border-radius: 15px;
+    background-color: white;
+    color: #1090CB;
+    border: 2px solid #1090CB;
+    padding: 15px 45px;
+    border-radius: 10px;
+}
+
+/* Ícones */
+
+section#web {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+    justify-content: space-between;
+    gap: 30px;
+
 }
 
 section#web .icons {
-    margin: 3vw 5vw 0 0;
     display: flex;
-}
-section#web {
-
-    display: flex;
-    justify-content: center;
-}
-section#web .icons h4 {
-
-    margin: 0 0 3px 0;
-    font-weight: 600;
-}
-section#web .icons img {
-
-    margin: 0 1vw 0 0;
-}
-
-section#lorem {
-
-    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 10vw 0 0 0;
+    padding: 20px;
+    background-color: white;
+    gap: 15px;
+   
 }
-section#lorem h2 {
 
-    margin: 0 0 2vw 0;
-    font-weight: 800;
-    font-size: 1.5vw;
+section#web .icons img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+section#web .icons h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+section#web .icons p {
+    color: #555;
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 0 0 1vw 0;
+}
+
+/* Seção Informativa */
+section#lorem {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+section#lorem h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: 3vw 0 2vw 0;
 }
 
 section#lorem p {
-
-    font-size: 1vw;
-    margin: 0 0 8vw 0;
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 40px;
 }
 
-div.conteudo1 {
+section#lorem .conteudo {
 
     display: flex;
+    margin: 0 0 5vw 0;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
-.conteudo1 h3 {
 
-    margin: 8vw 0 0 0;
-    font-size: 2vw;
+section#lorem .conteudo p {
+
     text-align: justify;
-    font-weight: 800;
+    margin: 2vw 0 0 0;
 }
-.conteudo1 h3 span {
+section#lorem .conteudo h3 {
+
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+section#lorem .conteudo h3 span {
 
     color: #1090CB;
 }
-.conteudo1 p {
 
-    text-align: justify;
-}
 
-div.conteudo2 {
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
 
-    display: flex;
+    color: white;
+    margin-top: 40px;
 }
